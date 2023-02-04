@@ -110,6 +110,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yQ-w2-dTb">
+                                <rect key="frame" x="85" y="783" width="224" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Change Background Color"/>
+                                <connections>
+                                    <action selector="ChangeBackgroundColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbz-VJ-6mv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun facts of my pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEE-Vs-1yo">
+                                <rect key="frame" x="16" y="616" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IU-dQ-cOE">
+                                <rect key="frame" x="206" y="609" width="160" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -117,6 +139,7 @@
                     <connections>
                         <outlet property="countOfPets" destination="Eza-TZ-g55" id="z3N-BD-bfl"/>
                         <outlet property="firstNameTextField" destination="LFA-0R-pdh" id="Yid-zt-NG4"/>
+                        <outlet property="funFactsOfMyPetsTextField" destination="5IU-dQ-cOE" id="Hsk-n2-g1L"/>
                         <outlet property="lastNameTextField" destination="KfZ-3I-jpG" id="Gp9-ZU-al8"/>
                         <outlet property="morePetsStepper" destination="hYt-oz-ApC" id="X14-xy-PxY"/>
                         <outlet property="morePetsSwitch" destination="EC8-1B-MRg" id="fM3-EK-9vS"/>
